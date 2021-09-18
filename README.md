@@ -1,2 +1,7 @@
-# CardDraw-Simulator
-Created with CodeSandbox
+## BangDream抽卡模拟器
+
+会根据限定卡池开放更新卡池内容。
+
+在pc端打开：https://nkir7.csb.app/
+
+因为太喜欢买自抽号了，搜不到邦邦抽卡模拟器，就自己写了个。主要实现抽卡部分功能，井到300抽会自动清空记录，其他部分是想往wiki方向靠为了美观。
