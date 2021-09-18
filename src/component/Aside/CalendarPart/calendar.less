@@ -1,0 +1,72 @@
+.calendar {
+  border: 4px dashed rgb(45, 65, 146);
+  padding-top: 10px;
+  background-image: url("https://e.im5i.com/2021/09/15/ImxS0.jpg");
+  width: 100%;
+  .calendar-header {
+    moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 20px;
+    border-bottom: 4px dotted rgb(45, 65, 146);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .header-center {
+      text-align: center;
+      .title,
+      .next-month {
+        margin-left: 20px;
+      }
+      .prev-month,
+      .next-month {
+        cursor: pointer;
+        color: rgb(236, 19, 88);
+        font-weight: bolder;
+      }
+    }
+  }
+  .calendar-body {
+    .week-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-bottom: 10px;
+      .week {
+        &:nth-child(6),
+        &:nth-child(7) {
+          color: red;
+        }
+        width: 14.2%;
+        display: inline-block;
+        text-align: center;
+      }
+    }
+
+    .day-container {
+      height: 220px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .day {
+        width: 14.2%;
+        display: inline-block;
+        text-align: center;
+        &:nth-child(7n-1) {
+          color: red;
+        }
+        &:nth-child(7n) {
+          color: red;
+        }
+        &.today {
+          color: green;
+        }
+      }
+    }
+  }
+}
